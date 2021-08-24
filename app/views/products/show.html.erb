@@ -1,0 +1,6 @@
+<h1><%= @product.name %></h1>
+<p><%= @product.tagline %></p>
+
+<%= link_to 'Update product', edit_product_path(@product) %>
+<%= link_to 'Destroy Product', product_path(@product), method: :delete%>
+
