@@ -12,17 +12,6 @@ class UserTest < ActiveSupport::TestCase
     refute user.valid?, 'user is valid without a last name'
   end
 
-  test 'invalid without email' do
-    user = User.new(first_name: 'John', email:'john@doe.com', password: '123456')
-    refute user.valid?, 'user is valid without an email'
-  end
-
-  test 'invalide without a password' do
-
-  end
-
-
-
   # test "valid user" do
   #   user = User.new(first_name: "John", last_name: "Doe", email:'john@doe.com', password: '123456')
   #   assert user.valid?
